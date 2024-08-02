@@ -42,6 +42,10 @@ body {
   margin: 0 0 43px;
 }
 
+.modal-overlay {
+  background-color: red;
+}
+
 .form__closing {
   border: none;
   outline: none;
@@ -50,6 +54,10 @@ body {
 }
 
 .add-product__border {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  column-gap: 24px;
+
   margin: 0 0 32px;
   padding: 28px;
   border-radius: 8px;
@@ -58,8 +66,13 @@ body {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
+
+
 .add-product__text {
   display: block;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #6E6893;
   text-indent: 10px;
@@ -80,17 +93,17 @@ body {
 }
 
 .add-product__input-field-discount {
-  width: 474px;
+  width: 100%;
   height: 40px;
   border-radius: 6px;
   background-color: #EEEEEE;;
-  padding: 0 0 0 10px;
-  margin-left: 48px;
+  padding: 0 0 0 50px;
+  margin-left: 50px;
   border: none;
 }
 
 .discount {
-  display: block;
+  display: flex;
   margin: 5px 0 12px 0;
 }
 
@@ -156,6 +169,43 @@ body {
   margin: 5px 0 12px 0;
 }
 
+.form__block-image-button {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #6d5bd0;
+  border: none;
+  outline: none;
+  padding: 11px 29px 11px 28px;
+  border-radius: 6px;
+  height: 39px;
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form__footer-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form__footer-text-text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6e6893;
+}
+
+.form__footer-price {
+  font-weight: 700;
+  font-size: 18px;
+  color: #6d5bd0;
+}
+
+
 .add-product__button {
   width: 200px;
   height: 40px;
@@ -167,7 +217,5 @@ body {
   color: #ffffff;
   background-color: #6D5BD0;
   padding: 0;
-  float: right;
-  margin: 0 28px 0 0;
   border: none;
 }

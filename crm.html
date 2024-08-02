@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>crm</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <div class="form">
+  <div class="modal-overlay">
+        <div class="form">
         <button class="form__closing" type="button"><img src="img/closing.png" alt="closing"></button>
         <div class="container">
             <h1 class="form__title">Добавить товар</h1>
             <form class="add-product" action="https://jsonplaceholder.typicode.com/posts"
             method="POST">
             <fieldset class="add-product__border">
+              <div class="form__block-1">
                 <label for="name" class="add-product__text">Наименование</label>
-                    <input class="add-product__input-field" type="text" name="name" id="name">
-                
-                <label for="category" class="add-product__text">Категория </label>
-                    <input class="add-product__input-field" type="text" name="category" id="category">
-               
-                <label for="Units" class="add-product__text">Единицы измерения</label>
-                    <input class="add-product__input-field" type="text" name="units" id="Units">
-                
-                <label for="add_discount" class="add-product__discount" >Дисконд</label>
-                <div class="discount">
-                    <input class="add-product__checkbox" type="checkbox" aria-label="Добавить скидку">
-                    <input class="add-product__input-field-discount" type="text" name="discount" id="add_discount">
-                </div>
-                <label for="Description" class="add-product__text">Описание</label>
+                <input class="add-product__input-field" type="text" name="name" id="name">
+            
+            <label for="category" class="add-product__text">Категория </label>
+                <input class="add-product__input-field" type="text" name="category" id="category">
+           
+            <label for="Units" class="add-product__text">Единицы измерения</label>
+                <input class="add-product__input-field" type="text" name="units" id="Units">
+            
+            <label for="add_discount" class="add-product__discount" >Дисконд</label>
+            <div class="discount">
+                <input class="add-product__checkbox" type="checkbox" aria-label="Добавить скидку">
+                <input class="add-product__input-field-discount" type="text" name="discount" id="add_discount">
+            </div>
+              </div>
+                <div class="form__block-2">
+                  <label for="Description" class="add-product__text">Описание</label>
                     <textarea class="add-product__textarea" name="description" id="Description" cols="25" rows="3"></textarea>
                 
                 <label for="Quantity" class="add-product__text">Количество</label>
@@ -37,10 +42,36 @@
                 
                 <label for="Price" class="add-product__text">Цена</label>
                     <input class="add-product__input-field" type="text" name="price" id="Price">
+                    <button class="form__block-image-button">Добавить изображение</button>
+                  </div>
+                
             </fieldset>
-                <button class="add-product__button" type="submit">Добавить товар</button>
+            <div class="form__footer">
+              <div class="form__footer-text">
+                <p class="form__footer-text-text">
+                  Итоговая стоимость:
+                </p>
+                <p class="form__footer-price">
+                  $ 900.00
+                </p>
+              </div>
+              <button class="add-product__button" type="submit">Добавить товар</button>
+            </div>
+                
             </form>
         </div>
     </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
