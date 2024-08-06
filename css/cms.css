@@ -114,7 +114,6 @@
 }
 
 .table__header-cell {
-  
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.05em;
@@ -122,11 +121,9 @@
   color: #6e6893;
 }
 
-
 .cell-id {
-
-width: 78px;
-text-align: left;
+  width: 78px;
+  text-align: left;
 }
 
 .cell-name {
@@ -135,30 +132,26 @@ text-align: left;
 }
 
 .cell-category {
-
-width: 160px;
-text-align: left;
+  width: 160px;
+  text-align: left;
 }
 
 .cell-units {
-width: 55px;
-
+  width: 55px;
 }
 
 .cell-quantity {
-
-width: 91px;
-
+  width: 91px;
 }
 
 .cell-price {
-width: 80px;
-text-align: right;
+  width: 80px;
+  text-align: right;
 }
 
 .cell-total {
-width: 80px;
-text-align: right;
+  width: 80px;
+  text-align: right;
 }
 
 .cell-empty {
@@ -169,13 +162,11 @@ text-align: right;
   border-bottom: 1px solid #D9D5EC;
 }
 
-
 .table__body {
- display: flex;
- flex-direction: column;
- padding-left: 15px;
- padding-right: 15px;
- 
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .table__body-item {
@@ -198,35 +189,35 @@ text-align: right;
 }
 
 .table__body-item__category {
-width: 160px;
-text-align: left;
+  width: 160px;
+  text-align: left;
 }
 
 .table__body-item__units {
-width: 54px;
-padding-left: 16px;
+  width: 54px;
+  padding-left: 16px;
 }
 
 .table__body-item__quantity {
-width: 91px;
-text-align: center;
+  width: 91px;
+  text-align: center;
 }
 
 .table__body-item__price {
-width: 80px;
-text-align: right;
+  width: 80px;
+  text-align: right;
 }
 
 .table__body-item__total {
-width: 80px;
-text-align: right;
+  width: 80px;
+  text-align: right;
 }
 
 .table__body-item-icons {
   width: 135px;
   display: flex;
   justify-content: flex-end;
-    gap: 20px;
+  gap: 20px;
 }
 
 .table__body-item-icons__btn {
