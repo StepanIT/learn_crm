@@ -110,7 +110,7 @@
   padding-left: 15px;
   padding-right: 15px;
   background: #F4F2FF;
-
+  border: 1px solid #D9D5EC;
 }
 
 .table__header-cell {
@@ -165,8 +165,6 @@
 .table__body {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .table__body-item {
@@ -177,6 +175,8 @@
   font-size: 14px;
   color: #25213b;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .table__body-item__ID {
