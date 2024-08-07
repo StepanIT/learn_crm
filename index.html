@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="preload" href="fonts/inter-v7-latin_cyrillic-regular.woff2"
     as="font" type="font/woff2" crossorigin>
@@ -19,19 +19,19 @@
   <body>
     <section class="cms">
       <div class="container">
-        <header class="cms__header">
+        <div class="cms__header">
           <h1 class="cms__title">CMS</h1>
           <p class="cms__total">Итоговая стоимость:
             <span class="cms__total-price">$ 900.00</span>
           </p>
-        </header>
+        </div>
         <div class="cms__products products">
           <div class="products__panel panel">
             <button class="products__panel__filter-btn">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 12L20 4V0H0V4L8 12V20L12 16V12Z" fill="#8B83BA" />
               </svg>
-              <p class="products__panel__filter-btn__text">Фильтр</p>
+              <span class="products__panel__filter-btn__text">Фильтр</span>
             </button>
             <form class="panel__search">
               <input type="search" class="panel__input" placeholder="Поиск по наименованию и категории">
